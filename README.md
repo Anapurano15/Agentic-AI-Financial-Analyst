@@ -105,7 +105,7 @@ openai>=1.37.0
 flowchart LR
   A[Sidebar Filters] --> B[Screen: FMP /stable/company-screener]
   B --> C[Tickers]
-  C --> D[Profiles: FMP /api/v3/profile/{ticker}]
+  C --> D[Profiles: FMP /api/v3/profile/&#123;ticker&#125;]
   D --> E[Summarize: OpenAI Chat Completion]
   E --> F[Streamlit Card/Grid UI]
   F --> G[CSV Export]
@@ -197,4 +197,3 @@ Choose a license that fits (e.g., MIT). Add `LICENSE` to the repo if you plan to
 ## 📝 Changelog
 
 - **v0.1** — Initial MVP: Screener → Profiles → GPT summaries with card layout & CSV export.
-
